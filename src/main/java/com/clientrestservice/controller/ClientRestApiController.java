@@ -111,13 +111,15 @@ public class ClientRestApiController {
 			return new ResponseEntity("Unable to upate. Client with id " + id + " not found.", HttpStatus.NOT_FOUND);
 		}
 
-		Client c2 = clientService.findByCpf(client.getCpf());
+		if (!c1.getCpf().equals(client.getCpf())) {
+			Client c2 = clientService.findByCpf(client.getCpf());
 
-		if (c2 != null) {
-			logger.error("Unable to create. A Client with cpf {} already exist.", client.getCpf());
+			if (c2 != null) {
+				logger.error("Unable to create. A Client with cpf {} already exist.", client.getCpf());
 
-			return new ResponseEntity("Unable to create. A Client with cpf " + client.getCpf() + " already exist.",
-					HttpStatus.CONFLICT);
+				return new ResponseEntity("Unable to create. A Client with cpf " + client.getCpf() + " already exist.",
+						HttpStatus.CONFLICT);
+			}
 		}
 
 		c1.setNome(client.getNome());
