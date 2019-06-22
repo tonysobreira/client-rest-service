@@ -175,7 +175,7 @@ public class ClientRestApiController {
 			return new ResponseEntity("Unable to delete. Client " + client + " not found.", HttpStatus.NOT_FOUND);
 		}
 
-		clientService.delete(client);
+		clientService.delete(c);
 		return new ResponseEntity<Client>(HttpStatus.NO_CONTENT);
 	}
 
