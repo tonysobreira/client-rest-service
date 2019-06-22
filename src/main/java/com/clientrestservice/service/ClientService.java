@@ -6,11 +6,11 @@ import com.clientrestservice.model.Client;
 
 public interface ClientService {
 
-	public List<Client> findAll();
+	public List<Client> findAllClients();
+
+	public Client findById(Integer id);
 
 	public Client saveOrUpdate(Client data);
-
-	public Client getById(Integer id);
 
 	public void deleteById(Integer id);
 

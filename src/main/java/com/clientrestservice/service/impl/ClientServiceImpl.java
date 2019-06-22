@@ -17,7 +17,7 @@ public class ClientServiceImpl implements ClientService {
 	private ClientRepository clientRepository;
 
 	@Override
-	public List<Client> findAll() {
+	public List<Client> findAllClients() {
 		return clientRepository.findAll();
 	}
 
@@ -27,7 +27,7 @@ public class ClientServiceImpl implements ClientService {
 	}
 
 	@Override
-	public Client getById(Integer id) {
+	public Client findById(Integer id) {
 		Optional<Client> optionalClient = clientRepository.findById(id);
 
 		if (optionalClient.isPresent()) {
