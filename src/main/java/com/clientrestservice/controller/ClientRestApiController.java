@@ -111,7 +111,7 @@ public class ClientRestApiController {
 			return new ResponseEntity("Unable to upate. Client with id " + id + " not found.", HttpStatus.NOT_FOUND);
 		}
 
-		Client c2 = clientService.findByCpf(c1.getCpf());
+		Client c2 = clientService.findByCpf(client.getCpf());
 
 		if (c2 != null) {
 			logger.error("Unable to create. A Client with cpf {} already exist.", client.getCpf());
