@@ -122,17 +122,17 @@ public class ClientRestApiController {
 			}
 		}
 
-		c1.setNome(client.getNome());
+		c1.setName(client.getName());
 		c1.setCpf(client.getCpf());
-		c1.setDataNascimento(client.getDataNascimento());
-		c1.setTelefone(client.getTelefone());
+		c1.setBirthDate(client.getBirthDate());
+		c1.setPhone(client.getPhone());
 		c1.setEmail(client.getEmail());
-		c1.setLogradouro(client.getLogradouro());
-		c1.setCep(client.getCep());
-		c1.setBairro(client.getBairro());
-		c1.setComplemento(client.getComplemento());
-		c1.setCidade(client.getCidade());
-		c1.setEstado(client.getEstado());
+		c1.setAddress(client.getAddress());
+		c1.setPostalCode(client.getPostalCode());
+		c1.setNeighborhood(client.getNeighborhood());
+		c1.setComplement(client.getComplement());
+		c1.setCity(client.getCity());
+		c1.setState(client.getState());
 
 		Client updatedClient = clientService.saveOrUpdate(client);
 
