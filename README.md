@@ -20,14 +20,14 @@ body json
 	"name": "Tony", 
 	"cpf": "111.111.111-11", 
 	"birthDate": "1984-09-20", 
-	"phone": "(71) 99103-4267", 
+	"phone": "(71) 99999-9999", 
 	"email": "tonysobreira@gmail.com", 
-	"address": "Rua da Sinagoga, N 22", 
-	"postalCode": "40450-610", 
-	"neighborhood": "Uruguai", 
-	"complement": "Térreo", 
-	"city": "Salvador", 
-	"state": "Bahia"
+	"address": "Rua XXX, N X", 
+	"postalCode": "40000-000", 
+	"neighborhood": "Bairro XXX", 
+	"complement": "Complemento XXX", 
+	"city": "Cidade XXX", 
+	"state": "Estado XXX"
 }
 
 Update a Client (PUT)
@@ -39,14 +39,14 @@ body json
 	"name": "Tony", 
 	"cpf": "111.111.111-11", 
 	"birthDate": "1984-09-20", 
-	"phone": "(71) 99103-4267", 
+	"phone": "(71) 99999-9999", 
 	"email": "tonysobreira@gmail.com", 
-	"address": "Rua da Sinagoga, N 22...", 
-	"postalCode": "40450-610", 
-	"neighborhood": "Uruguai", 
-	"complement": "Térreo", 
-	"city": "Salvador", 
-	"state": "Bahia"
+	"address": "Rua XXX, N XX", 
+	"postalCode": "40000-000", 
+	"neighborhood": "Bairro XXX", 
+	"complement": "Complemento XXX", 
+	"city": "Cidade XXX", 
+	"state": "Estado XXX"
 }
 
 Delete one Client (DELETE)
@@ -64,14 +64,14 @@ body json
 	"name": "Tony", 
 	"cpf": "111.111.111-11", 
 	"birthDate": "1984-09-20", 
-	"phone": "(71) 99103-4267", 
+	"phone": "(71) 99999-9999", 
 	"email": "tonysobreira@gmail.com", 
-	"address": "Rua da Sinagoga, N 22", 
-	"postalCode": "40450-610", 
-	"neighborhood": "Uruguai", 
-	"complement": "Térreo", 
-	"city": "Salvador", 
-	"state": "Bahia"
+	"address": "Rua XXX, N X", 
+	"postalCode": "40000-000", 
+	"neighborhood": "Bairro XXX", 
+	"complement": "Complemento XXX", 
+	"city": "Cidade XXX", 
+	"state": "Estado XXX"
 }
 
 Find a Client by cpf (GET)
